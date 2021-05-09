@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info page should match the snapshot 1`] = `
+<main>
+  <h1>
+    Info NextJS
+  </h1>
+  <p>
+    <a
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      Volver al Inicio
+    </a>
+  </p>
+</main>
+`;
