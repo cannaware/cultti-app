@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
-// import QrReader from 'react-qr-reader';
 import dynamic from 'next/dynamic';
 
 const QrReader = dynamic(() => import('react-qr-reader'), {
@@ -26,7 +25,7 @@ const ScanPage: NextPage = () => {
   const openUrl = (data: string | null): void => {
     console.log('openUrl', data);
     if (data) {
-      window.open(data, '_blank', 'location=yes');
+      window.open(data, '_blank');
     }
   };
 
