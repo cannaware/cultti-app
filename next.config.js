@@ -1,13 +1,13 @@
-// const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')
 
-// module.exports = withPWA({
-//   trailingSlash: true,
-//   // poweredByHeader: false,
-//   pwa: {
-//     dest: 'public'
-//   }
-// });
-
-module.exports = {
+module.exports = withPWA({
   trailingSlash: true,
-};
+  // poweredByHeader: false,
+  pwa: {
+    dest: 'public'
+  }
+});
+
+// module.exports = {
+//   trailingSlash: true,
+// };
