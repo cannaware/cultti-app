@@ -39,6 +39,11 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
         <p>{nextLaunch.details}</p>
         <p>{nextLaunch.launch_year}</p>
         <p>
+          <Link href="/setup/paso-1">
+            <a>Setup</a>
+          </Link>
+        </p>
+        <p>
           <Link href="/scan">
             <a>Scannear QR</a>
           </Link>
