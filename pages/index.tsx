@@ -28,25 +28,32 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
   }
 
   return (
-    <main>
+    <main className="text-black dark:text-white">
       <div className="mb-3">
-        <h1 className="text-black dark:text-white text-3xl font-bold">¡Hola!</h1>
+        <h1 className="text-3xl font-bold">¡Hola!</h1>
         <p className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase">
           Next SpaceX Launch: {nextLaunch.flight_number}
         </p>
       </div>
-      <p>{nextLaunch.details}</p>
-      <p>{nextLaunch.launch_year}</p>
-      <p>
-        <Link href="/info">
-          <a>Ir a Info..</a>
-        </Link>
-      </p>
-      <p>
-        <Link href="/acerca">
-          <a>Ir a Acerca..</a>
-        </Link>
-      </p>
+      <div className="m-2">
+        <p>{nextLaunch.details}</p>
+        <p>{nextLaunch.launch_year}</p>
+        <p>
+          <Link href="/scan">
+            <a>Scannear QR</a>
+          </Link>
+        </p>
+        <p>
+          <Link href="/info">
+            <a>Ir a Info..</a>
+          </Link>
+        </p>
+        <p>
+          <Link href="/acerca">
+            <a>Ir a Acerca..</a>
+          </Link>
+        </p>
+      </div>
     </main>
   );
 };
