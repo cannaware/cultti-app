@@ -18,6 +18,16 @@ const ScanPage: NextPage = () => {
   const handleScan = (data: string | null): void => {
     console.log('data', data);
     setResult(data);
+    if (data) {
+      window.open(data, '_blank', 'location=yes');
+    }
+  };
+
+  const openUrl = (data: string | null): void => {
+    console.log('openUrl', data);
+    if (data) {
+      window.open(data, '_blank', 'location=yes');
+    }
   };
 
   return (
@@ -30,9 +40,16 @@ const ScanPage: NextPage = () => {
         <p>{result}</p>
       </div>
       <div className="mb-2">
-        <Link href="/">
-          <a>Volver al Inicio</a>
-        </Link>
+        <p>
+          <a href="#" onClick={() => openUrl(result)}>
+            Activar QR
+          </a>
+        </p>
+        <p>
+          <Link href="/">
+            <a>Volver al Inicio</a>
+          </Link>
+        </p>
       </div>
     </main>
   );
