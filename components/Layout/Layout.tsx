@@ -5,11 +5,12 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta httpEquiv="ScreenOrientation" content="autoRotate:disabled" />
         <meta name="application-name" content="Cultti" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Cultti" />
-        <meta name="description" content="Cultti App" />
+        <meta name="description" content="🌱 App de cultivo asistido" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
@@ -38,13 +39,13 @@ const Layout: React.FC = ({ children }) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://yourdomain.com" />
         <meta name="twitter:title" content="Cultti" />
-        <meta name="twitter:description" content="Cultti App" />
+        <meta name="twitter:description" content="🌱 App de cultivo asistido" />
         <meta name="twitter:image" content="https://yourdomain.com/image/icons/icon-192x192.png" />
         <meta name="twitter:creator" content="@CannawareIO" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Cultti" />
-        <meta property="og:description" content="Cultti App" />
+        <meta property="og:description" content="🌱 App de cultivo asistido" />
         <meta property="og:site_name" content="Cultti" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta property="og:image" content="https://yourdomain.com/og.png" />
