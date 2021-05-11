@@ -15,19 +15,12 @@ exports[`Index page should match the snapshot 1`] = `
     <p
       className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase"
     >
-      Next SpaceX Launch: 
-      110
+      Comencemos a cultivar
     </p>
   </div>
   <div
     className="m-2"
   >
-    <p>
-      SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo.
-    </p>
-    <p>
-      2020
-    </p>
     <p>
       <a
         href="/setup/paso-1"
