@@ -54,7 +54,9 @@ const Layout: React.FC = ({ children }) => {
       </Head>
       <div className="flex flex-wrap">
         <div className="w-full sm:w-1/3 xl:w-1/3"></div>
-        <div className="w-full sm:w-1/3 xl:w-1/3 p-4">{children}</div>
+        <div className="w-full sm:w-1/3 xl:w-1/3 p-4 border-solid border-2 border-light-blue-500">
+          {children}
+        </div>
         <div className="w-full sm:w-1/3 xl:w-1/3"></div>
       </div>
     </>
