@@ -32,7 +32,7 @@ const IndexPage: NextPage = () => {
       <div className="mb-3">
         <h1 className="text-3xl font-bold">¡Hola!</h1>
         <p className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase">
-          Comencemos a cultivar!
+          Comencemos a cultivar
         </p>
       </div>
       <div className="m-2">
@@ -48,12 +48,12 @@ const IndexPage: NextPage = () => {
         </p>
         <p>
           <Link href="/info">
-            <a>Ir a Info..</a>
+            <a>Ir a Info</a>
           </Link>
         </p>
         <p>
           <Link href="/acerca">
-            <a>Ir a Acerca..</a>
+            <a>Ir a Acerca</a>
           </Link>
         </p>
       </div>
