@@ -15,7 +15,7 @@ exports[`Index page should match the snapshot 1`] = `
     <p
       className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase"
     >
-      Comencemos a cultivar!
+      Comencemos a cultivar
     </p>
   </div>
   <div
@@ -45,7 +45,7 @@ exports[`Index page should match the snapshot 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Ir a Info..
+        Ir a Info
       </a>
     </p>
     <p>
@@ -54,7 +54,7 @@ exports[`Index page should match the snapshot 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
       >
-        Ir a Acerca..
+        Ir a Acerca
       </a>
     </p>
   </div>
