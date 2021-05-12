@@ -42,9 +42,11 @@ const Conectar: NextPage = () => {
         <p className="mb-3">{config ? JSON.stringify(config) : 'sin response'}</p>
         <p className="mb-3 text-center text-2xl">{ip || 'sin ip'}</p>
         <p className="mb-3">
-          <Link href={`http://${ip}/connect/${code}`}>
-            <a>{`http://${ip}/connect/${code}`}</a>
-          </Link>
+          <a
+            href={`http://${ip}/connect/${code}`}
+            target="_blank"
+            rel="noreferrer"
+          >{`http://${ip}/connect/${code}`}</a>
         </p>
         <p>
           <Link href="/">
