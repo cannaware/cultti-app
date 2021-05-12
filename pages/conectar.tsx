@@ -1,26 +1,35 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
-import useInterval from '../hooks/useInterval';
+// import { useState } from 'react';
+// import useInterval from '../hooks/useInterval';
+import useSWR from 'swr';
 
 const Conectar: NextPage = () => {
   const router = useRouter();
-  const [config, setConfig] = useState(null);
+  // const [config, setConfig] = useState(null);
+  // const [message, setMessage] = useState(null);
   const { code, ip, ssid } = router.query;
 
-  useInterval(async () => {
-    if (ip && code) {
-      fetch(`http://${ip}/connect/${code}`)
-        .then((response) => response.json())
-        .then(({ config }) => {
-          setConfig(config);
-        })
-        .catch((error) => {
-          console.log('error:', error.toString());
-        });
-    }
-  }, 1000);
+  const { data, error } = useSWR(`http://${ip}/connect/${code}`);
+  // console.log('data', `http://${ip}/connect/${code}`, data, error);
+
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+
+  // useInterval(async () => {
+  //   if (ip && code) {
+  //     fetch(`http://${ip}/connect/${code}`)
+  //       .then((response) => response.json())
+  //       .then(({ config }) => {
+  //         setConfig(config);
+  //       })
+  //       .catch((error) => {
+  //         console.log('error:', error.toString());
+  //       })
+  //       .finally(() => setMessage());
+  //   }
+  // }, 1000);
 
   return (
     <main className="text-black dark:text-white">
@@ -39,7 +48,8 @@ const Conectar: NextPage = () => {
             <strong>{ssid}</strong>
           </p>
         </div>
-        <p className="mb-3">{config ? JSON.stringify(config) : 'sin response'}</p>
+        {/* <p className="mb-3">{config ? JSON.stringify(config) : 'sin response'}</p> */}
+        {/* <p className="mb-3">{message ? message : 'sin mensaje'}</p> */}
         <p className="mb-3 text-center text-2xl">{ip || 'sin ip'}</p>
         <p className="mb-3">
           <a
