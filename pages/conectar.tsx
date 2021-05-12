@@ -34,7 +34,10 @@ const Conectar: NextPage = () => {
       </div>
       <div className="m-2">
         <div className="mb-6 mt-6 text-gray-300 text-center text-xl">
-          Para comenzar, necesitás conectar tu celular a la red WiFi <strong>{ssid}</strong>
+          Para comenzar, necesitás conectar tu celular a la red WiFi
+          <p>
+            <strong>{ssid}</strong>
+          </p>
         </div>
         <p className="mb-3">{config ? JSON.stringify(config) : 'sin response'}</p>
         <p className="mb-3 text-center text-2xl">{ip || 'sin ip'}</p>
