@@ -1,0 +1,51 @@
+import { NextPage } from 'next';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import useInterval from '../hooks/useInterval';
+
+const Conectar: NextPage = () => {
+  const router = useRouter();
+  const [config, setConfig] = useState(null);
+  const { code, ip, ssid } = router.query;
+
+  useInterval(async () => {
+    if (ip && code) {
+      fetch(`http://${ip}/connect/${code}`)
+        .then((response) => response.json())
+        .then(({ config }) => {
+          setConfig(config);
+        })
+        .catch((error) => {
+          console.log('error:', error.toString());
+        });
+    }
+  }, 1000);
+
+  return (
+    <main className="text-black dark:text-white">
+      <div className="mb-3">
+        <h1 className="text-3xl text-center font-bold">
+          <span role="img" aria-label="Celular">
+            📱
+          </span>{' '}
+          Conectar nuevo dispositivo
+        </h1>
+      </div>
+      <div className="m-2">
+        <div className="mb-6 mt-6 text-gray-300 text-center text-xl">
+          Para comenzar, necesitás conectar tu celular a la red WiFi <strong>{ssid}</strong>
+        </div>
+        <p className="mb-3">{config ? JSON.stringify(config) : 'sin response'}</p>
+        <p className="mb-3 text-center text-2xl">{ip || 'sin ip'}</p>
+        <p>
+          <Link href="/">
+            <a>Volver al Inicio</a>
+          </Link>
+        </p>
+      </div>
+    </main>
+  );
+};
+
+export default Conectar;
