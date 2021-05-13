@@ -52,11 +52,7 @@ const Conectar: NextPage = () => {
         {/* <p className="mb-3">{message ? message : 'sin mensaje'}</p> */}
         <p className="mb-3 text-center text-2xl">{ip || 'sin ip'}</p>
         <p className="mb-3">
-          <a
-            href={`http://${ip}/connect/${code}`}
-            target="_blank"
-            rel="noreferrer"
-          >{`http://${ip}/connect/${code}`}</a>
+          <a href={`http://${ip}/connect/${code}`}>{`http://${ip}/connect/${code}`}</a>
         </p>
         <p>
           <Link href="/">
