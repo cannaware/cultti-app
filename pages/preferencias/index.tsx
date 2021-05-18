@@ -1,16 +1,14 @@
+import type { MouseEvent } from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
-import Loader from '../../components/Loader';
-import usePersistedState from '../../hooks/usePersistedState';
+import { useSessionContext } from '../../contexts/SessionContext';
 
 const PreferenciasPage: NextPage = () => {
-  const [cid, setCid] = usePersistedState('cultti.uid', '');
+  const { sid } = useSessionContext();
 
-  if (!cid) return <Loader />;
-
-  const deleteCid = (): void => {
-    setCid(null);
-    window.location.href = './';
+  const handleCleanSID = (e: MouseEvent): void => {
+    e.preventDefault();
+    console.log(sid);
   };
 
   return (
@@ -18,9 +16,9 @@ const PreferenciasPage: NextPage = () => {
       <div className="mb-3">
         <h1 className="text-3xl font-bold">Preferencias</h1>
       </div>
-      <p>CID: {cid}</p>
+      <p>CID: {sid}</p>
       <p>
-        <a href="#" onClick={() => deleteCid()}>
+        <a href="#" onClick={handleCleanSID}>
           Borrar CID
         </a>
       </p>

@@ -32,6 +32,15 @@ exports[`Index page should match the snapshot 1`] = `
     </p>
     <p>
       <a
+        href="/preferencias"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Preferencias
+      </a>
+    </p>
+    <p>
+      <a
         href="/scan"
         onClick={[Function]}
         onMouseEnter={[Function]}
