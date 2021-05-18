@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { set, get } from 'idb-keyval';
 
-type TState = string | boolean | number;
+type TState = string | boolean | number | null;
 
 const usePersistedState = (
   keyToPersistWith: string,
