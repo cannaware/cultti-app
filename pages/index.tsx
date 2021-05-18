@@ -42,6 +42,11 @@ const IndexPage: NextPage = () => {
           </Link>
         </p>
         <p>
+          <Link href="/preferencias">
+            <a>Preferencias</a>
+          </Link>
+        </p>
+        <p>
           <Link href="/scan">
             <a>Scannear QR</a>
           </Link>
