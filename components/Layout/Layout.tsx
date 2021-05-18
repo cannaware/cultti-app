@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { useSessionContext } from '../../contexts/SessionContext';
-import Loader from '../Loader';
+import { useSessionContext } from '@contexts/SessionContext';
+import Loader from '@components/Loader';
 
 const Layout: React.FC = ({ children }) => {
   const { sid } = useSessionContext();

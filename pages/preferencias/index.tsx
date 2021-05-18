@@ -1,7 +1,7 @@
 import type { MouseEvent } from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
-import { useSessionContext } from '../../contexts/SessionContext';
+import { useSessionContext } from '@contexts/SessionContext';
 
 const PreferenciasPage: NextPage = () => {
   const { sid } = useSessionContext();

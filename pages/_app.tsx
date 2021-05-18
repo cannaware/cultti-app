@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react';
 import type { AppProps } from 'next/app';
-import Layout from '../components/Layout';
-import SessionContext from '../contexts/SessionContext';
+import Layout from '@components/Layout';
+import SessionContext from '@contexts/SessionContext';
 import { set, get } from 'idb-keyval';
 import { ulid } from 'ulid';
 
