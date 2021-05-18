@@ -1,6 +1,26 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
+import Loader from '../Loader';
+import usePersistedState from '../../hooks/usePersistedState';
+import { ulid } from 'ulid';
+
+const INITIAL_CID = '';
 
 const Layout: React.FC = ({ children }) => {
+  const [cid, setCid] = usePersistedState('cultti.uid', INITIAL_CID);
+
+  useEffect(() => {
+    if (cid === INITIAL_CID) {
+      const fetchCID = (): void => {
+        const cid = ulid();
+        setCid(cid);
+      };
+      fetchCID();
+    }
+  }, [cid, setCid]);
+
+  if (!cid) return <Loader />;
+
   return (
     <>
       <Head>
