@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 export const Loader: FC = () => {
-  const circleCommonClasses = 'h-2.5 w-2.5 bg-lime-500 dark:bg-lime-400 rounded-full';
+  const circleCommonClasses = 'h-2.5 w-2.5 bg-lime-500 rounded-full';
 
   return (
     <div className="flex">
