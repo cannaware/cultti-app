@@ -1,18 +1,12 @@
 {
-  "name": "Cultti",
   "short_name": "Cultti",
-  "theme_color": "#059669",
-  "background_color": "#059669",
+  "name": "Cultti",
+  "start_url": "https://cultti.xyz/?utm_source=pwa_launch",
+  "background_color": "#84CC16",
   "display": "standalone",
-  "orientation": "portrait",
   "scope": "/",
-  "start_url": "https://cultti.xyz/",
-  "scope_url": "https://cultti.xyz/",
-  "intent_filters": {
-    "scope_url_scheme": "https",
-    "scope_url_host": "cultti.xyz",
-    "scope_url_path": "/"
-  },
+  "theme_color": "#84CC16",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "images/icons/icon-36x36.png",
