@@ -24,8 +24,8 @@ export const Topbar: FC<TopbarProps> = ({ title }) => {
 
   return (
     <nav
-      className={`transition sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
-        scrolled && 'bg-lime-500'
+      className={`top-bar transition sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
+        scrolled ? 'bg-lime-500' : 'bg-white dark:bg-gray-800'
       }`}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
