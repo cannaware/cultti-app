@@ -24,14 +24,14 @@ export const Topbar: FC<TopbarProps> = ({ title }) => {
 
   return (
     <nav
-      className={`transition-colors sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
+      className={`transition sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
         scrolled && 'bg-lime-500'
       }`}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto  lg:static lg:block lg:justify-start">
           <h1
-            className={`transition-transform duration-500 ease-in-out font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white ${
+            className={`transition duration-500 ease-in-out font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white ${
               scrolled ? 'text-md' : 'text-3xl'
             }`}
           >
