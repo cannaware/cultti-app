@@ -1,5 +1,21 @@
-import type { FC } from 'react';
+import Head from 'next/head';
 
-export const Page: FC = ({ children }) => {
-  return <main className="text-black dark:text-white">{children}</main>;
+import type { ReactNode, FC } from 'react';
+
+type PageProp = {
+  children?: ReactNode;
+  title?: string;
+};
+
+export const Page: FC<PageProp> = ({ children, title }) => {
+  return (
+    <>
+      {title && (
+        <Head>
+          <title>{title}</title>
+        </Head>
+      )}
+      <main className="text-black dark:text-white">{children}</main>
+    </>
+  );
 };

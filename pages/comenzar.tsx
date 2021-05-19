@@ -3,14 +3,10 @@ import { Topbar } from '@components/Topbar';
 import { PageContent } from '@components/PageContent';
 import { NextPage } from 'next';
 import Link from 'next/link';
-import Head from 'next/head';
 
 const ComenzarPage: NextPage = () => {
   return (
-    <Page>
-      <Head>
-        <title>Comenzar | Cultti</title>
-      </Head>
+    <Page title="Comenzar - Cultti">
       <Topbar title={'Comenzar'} />
       <PageContent>
         <p>lalalalala</p>

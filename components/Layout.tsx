@@ -45,20 +45,29 @@ const Layout: React.FC = ({ children }) => {
         />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://yourdomain.com" />
-        <meta name="twitter:title" content="Cultti" />
-        <meta name="twitter:description" content="🌱 App de cultivo asistido" />
-        <meta name="twitter:image" content="https://yourdomain.com/image/icons/icon-192x192.png" />
-        <meta name="twitter:creator" content="@CannawareIO" />
+        <meta name="twitter:url" content="https://cultti.xyz" />
+        <meta
+          name="twitter:title"
+          content="Cultti - Aprendé a cultivar cannabis gratis @cultti.arg"
+        />
+        <meta
+          name="twitter:description"
+          content="Aprendé a cultivar cannabis jugando. Es 100% gratis, divertido, y con contenido avalado científicamente."
+        />
+        <meta name="twitter:image" content="https://cultti.xyz/image/icons/icon-192x192.png" />
+        <meta name="twitter:site" content="@cultti.arg" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Cultti" />
-        <meta property="og:description" content="🌱 App de cultivo asistido" />
+        <meta property="og:title" content="Aprendé a cultivar cannabis gratis @cultti.arg" />
+        <meta
+          property="og:description"
+          content="🌱 Aprendé a cultivar cannabis jugando. Es 100% gratis, divertido, y con contenido avalado científicamente."
+        />
         <meta property="og:site_name" content="Cultti" />
-        <meta property="og:url" content="https://yourdomain.com" />
-        <meta property="og:image" content="https://yourdomain.com/og.png" />
+        <meta property="og:url" content="https://cultti.xyz" />
+        <meta property="og:image" content="https://cultti.xyz/og.png" />
 
-        <title>Cultti</title>
+        <title>Cultti - La mejor manera de aprender a cultivar cannabis. Gratis</title>
       </Head>
       <div className="flex flex-wrap">
         <div className="w-full sm:w-1/3 xl:w-1/3"></div>
