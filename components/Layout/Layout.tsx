@@ -1,10 +1,13 @@
-import Loader from '@components/Loader';
+import { OverlayLoader } from '@components/Loader';
 import { useSessionContext } from '@contexts/SessionContext';
 import Head from 'next/head';
 
 const Layout: React.FC = ({ children }) => {
   const { sid } = useSessionContext();
-  if (!sid) return <Loader />;
+
+  if (!sid) {
+    return <OverlayLoader />;
+  }
 
   return (
     <>

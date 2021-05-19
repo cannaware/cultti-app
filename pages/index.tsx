@@ -31,7 +31,7 @@ const IndexPage: NextPage = () => {
     <main className="text-black dark:text-white">
       <div className="mb-3">
         <h1 className="text-3xl font-bold">¡Hola!</h1>
-        <p className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase">
+        <p className="text-gray-500 dark:text-lime-400 text-sm font-bold uppercase">
           Comencemos a cultivar
         </p>
       </div>

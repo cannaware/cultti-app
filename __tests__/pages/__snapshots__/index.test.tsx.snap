@@ -8,12 +8,12 @@ exports[`Index page should match the snapshot 1`] = `
     className="mb-3"
   >
     <h1
-      className="text-3xl font-bold"
+      className="text-3xl dark:text-lime-400 font-bold"
     >
       ¡Hola!
     </h1>
     <p
-      className="text-gray-500 dark:text-green-500 text-sm font-bold uppercase"
+      className="text-gray-500 dark:text-gray-400 text-sm font-bold uppercase"
     >
       Comencemos a cultivar
     </p>
