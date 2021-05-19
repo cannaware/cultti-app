@@ -9,6 +9,17 @@ class MyDocument extends Document {
   }
 
   render() {
+    // Check the URL starts with 'http' protocol, and redirect to 'https' if needed
+    let isHttp = true;
+    if (typeof window !== 'undefined') {
+      const httpTokens: string[] | null = /^http:\/\/(.*)$/.exec(window.location.href);
+      const isDev = window.location.hostname === 'localhost';
+      isHttp = !!httpTokens && !isDev;
+      if (isHttp) {
+        window.location.replace('https://' + httpTokens ?? [1]);
+      }
+    }
+
     return (
       <Html lang="es">
         <Head />

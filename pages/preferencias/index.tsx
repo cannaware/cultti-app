@@ -1,15 +1,21 @@
 import { useSessionContext } from '@contexts/SessionContext';
 import { NextPage } from 'next';
 import Link from 'next/link';
+import { clear } from 'idb-keyval';
+import toast from 'react-hot-toast';
+import Router from 'next/router';
 
 import type { MouseEvent } from 'react';
 
 const PreferenciasPage: NextPage = () => {
   const { sid } = useSessionContext();
 
-  const handleCleanSID = (e: MouseEvent): void => {
+  const handleClearSID = (e: MouseEvent): void => {
     e.preventDefault();
-    console.log(sid);
+    clear();
+    toast.success('Borrado exitoso');
+    console.log('clean db');
+    Router.reload();
   };
 
   return (
@@ -19,7 +25,7 @@ const PreferenciasPage: NextPage = () => {
       </div>
       <p>CID: {sid}</p>
       <p>
-        <a href="#" onClick={handleCleanSID}>
+        <a href="#" onClick={handleClearSID}>
           Borrar CID
         </a>
       </p>
