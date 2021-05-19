@@ -1,8 +1,8 @@
+import useInterval from '@hooks/useInterval';
 import { NextPage } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import useInterval from '@hooks/useInterval';
 
 const Paso1: NextPage = () => {
   const router = useRouter();

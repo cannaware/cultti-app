@@ -1,4 +1,5 @@
 import renderer from 'react-test-renderer';
+
 import InfoPage from '../../pages/info';
 
 describe('Info page', () => {

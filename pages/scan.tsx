@@ -1,7 +1,7 @@
-import { useState } from 'react';
 import { NextPage } from 'next';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useState } from 'react';
 
 const QrReader = dynamic(() => import('react-qr-reader'), {
   ssr: false,

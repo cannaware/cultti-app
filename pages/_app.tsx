@@ -1,11 +1,12 @@
-import { FC, useState, useEffect } from 'react';
-import type { AppProps } from 'next/app';
+import 'tailwindcss/tailwind.css';
+
 import Layout from '@components/Layout';
 import SessionContext from '@contexts/SessionContext';
-import { set, get } from 'idb-keyval';
+import { get, set } from 'idb-keyval';
+import { FC, useEffect, useState } from 'react';
 import { ulid } from 'ulid';
 
-import 'tailwindcss/tailwind.css';
+import type { AppProps } from 'next/app';
 
 const SID_KEY = 'cultti.sid';
 const INITIAL_SID = '';

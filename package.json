@@ -1,14 +1,12 @@
 {
   "name": "cultti-app",
-  "description": "App de cultivo asistido (PWA)",
   "version": "v0.0.1",
+  "private": true,
+  "description": "App de cultivo asistido (PWA)",
+  "repository": "git@github.com:cannaware/cultti-app.git",
   "license": "MIT",
   "author": "Mario Colque <info@cannaware.io>",
   "main": "index.js",
-  "repository": "git@github.com:cannaware/cultti-app.git",
-  "engines": {
-    "node": "14.x.x"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -42,10 +40,12 @@
     "babel-jest": "^26.6.3",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
@@ -58,5 +58,7 @@
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
-  "private": true
+  "engines": {
+    "node": "14.x.x"
+  }
 }
