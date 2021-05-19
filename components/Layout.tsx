@@ -39,10 +39,6 @@ const Layout: React.FC = ({ children }) => {
         <link rel="shortcut icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://cultti.xyz" />
