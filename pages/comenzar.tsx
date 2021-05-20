@@ -48,6 +48,21 @@ const ComenzarPage: NextPage = () => {
         <p>lalalalala</p>
         <p>lalalalala</p>
         <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
+        <p>lalalalala</p>
         <p>
           <Link href="/">
             <a>Volver al Inicio</a>

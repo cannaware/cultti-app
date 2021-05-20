@@ -14,6 +14,10 @@ const Layout: React.FC = ({ children }) => {
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="ScreenOrientation" content="autoRotate:disabled" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta name="application-name" content="Cultti" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -25,6 +29,7 @@ const Layout: React.FC = ({ children }) => {
         <meta name="msapplication-TileColor" content="#059669" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#059669" />
+        <meta name="HandheldFriendly" content="true" />
 
         <link rel="apple-touch-icon" href="/static/icons/touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/icon-152x152.png" />

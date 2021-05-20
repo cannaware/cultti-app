@@ -1,5 +1,4 @@
 import '../styles/globals.css';
-import 'tailwindcss/tailwind.css';
 
 import Layout from '@components/Layout';
 import SessionContext from '@contexts/SessionContext';
@@ -40,7 +39,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <SessionContext.Provider value={{ sid }}>
-      <Toaster position="bottom-center" reverseOrder={true} />
+      <Toaster position="bottom-center" />
       <Layout>
         <Component {...pageProps} />
       </Layout>

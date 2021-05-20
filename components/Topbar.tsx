@@ -24,15 +24,15 @@ export const Topbar: FC<TopbarProps> = ({ title }) => {
 
   return (
     <nav
-      className={`top-bar transition sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
+      className={`sticky top-0 z-50 flex flex-wrap items-center justify-between p-4 ${
         scrolled ? 'bg-lime-500' : 'bg-white dark:bg-gray-800'
       }`}
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto  lg:static lg:block lg:justify-start">
           <h1
-            className={`transition duration-500 ease-in-out font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white ${
-              scrolled ? 'text-md' : 'text-3xl'
+            className={`transition duration-500 ease-in-out leading-relaxed inline-block whitespace-nowrap font-bold uppercase ${
+              scrolled ? 'text-md text-white' : 'text-3xl text-gray-800 dark:text-white'
             }`}
           >
             {title}
